@@ -1,0 +1,16 @@
+.content {
+  border-radius: 30px;
+  width: 736px;
+  height: 512px;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 20px 20px 60px hsl(222, 73%, 88%);
+  display: flex;
+}
+@media (min-width: 320px) and (max-width: 900px) {
+  .content {
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=content.css.map */

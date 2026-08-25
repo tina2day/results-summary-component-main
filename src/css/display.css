@@ -1,0 +1,22 @@
+.display {
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.display__number {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0;
+}
+.display__description {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: hsl(241, 100%, 89%);
+}/*# sourceMappingURL=display.css.map */

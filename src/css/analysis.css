@@ -1,0 +1,51 @@
+.analysis {
+  width: 80%;
+  margin: 0 auto 25px;
+}
+.analysis__item {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-family: "Hanken Grotesk";
+  font-weight: 500;
+  display: flex;
+}
+@media (min-width: 320px) and (max-width: 900px) {
+  .analysis__item {
+    margin-bottom: 20px;
+  }
+}
+.analysis__item img {
+  margin: 8px 15px 8px 20px;
+}
+.analysis__item h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.analysis__item p {
+  margin: auto 20px auto auto;
+  align-items: center;
+  color: hsl(224, 30%, 27%);
+  font-family: "Hanken Grotesk";
+  font-weight: 800;
+}
+.analysis__item p span {
+  color: hsla(224, 30%, 27%, 0.623);
+}
+.analysis__item:nth-child(1) {
+  background: hsla(0, 100%, 67%, 0.05);
+  color: hsl(0, 100%, 67%);
+}
+.analysis__item:nth-child(2) {
+  background: hsla(39, 100%, 56%, 0.05);
+  color: hsl(39, 100%, 56%);
+}
+.analysis__item:nth-child(3) {
+  background: hsla(166, 100%, 37%, 0.05);
+  color: hsl(166, 100%, 37%);
+}
+.analysis__item:nth-child(4) {
+  background: hsla(234, 85%, 45%, 0.05);
+  color: hsl(234, 85%, 45%);
+}/*# sourceMappingURL=analysis.css.map */

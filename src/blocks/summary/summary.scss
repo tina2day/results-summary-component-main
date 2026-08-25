@@ -1,0 +1,38 @@
+.summary {
+    width: 50%;
+    color: hsl(224, 30%, 27%);
+    font-family: 'Hanken Grotesk';
+    @media (min-width: 320px) and (max-width: 900px) {
+        width: 100%;
+    }
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        width: 80%;
+        margin: 40px auto 25px auto;
+    }
+    &__button {
+        width: 80%;
+        height: 60px;
+        margin: 35px auto 35px;
+        border-radius: 35px;
+        background: hsl(224, 30%, 27%);
+        position: relative;
+        &:hover {
+            background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        }
+        h3 {
+            position: absolute;
+            width: 100%;
+            font-family: 'Hanken Grotesk';
+            font-size: 18px;
+            color: white;
+            font-weight: 500;
+            z-index: 100;
+            text-align: center;
+        }
+        button {
+            visibility: hidden;
+        }
+    }
+}

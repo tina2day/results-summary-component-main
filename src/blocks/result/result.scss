@@ -1,0 +1,36 @@
+.result {
+    width: 50%;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Hanken Grotesk';
+    border-radius: 30px;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%) 250px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 320px) and (max-width: 900px) {
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+    }
+    &__title {
+        font-size: 22px;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 0;
+        color: hsl(241, 100%, 89%);
+    }
+    &__name {
+        font-size: 32px;
+        text-align: center;
+        font-weight: 700;
+        margin: 30px auto 0 auto;
+    }
+    &__explanation {
+        font-size: 18px;
+        width: 70%;
+        text-align: center;
+        font-weight: 500;
+        margin: 20px auto 50px;
+        color: hsl(241, 100%, 89%);
+    }
+}

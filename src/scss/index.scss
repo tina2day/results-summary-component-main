@@ -1,0 +1,34 @@
+@import "./font";
+@import "../blocks/analysis/analysis";
+@import "../blocks/content/content";
+@import "../blocks/display/display";
+@import "../blocks/result/result";
+@import "../blocks/summary/summary";
+
+$red: hsl(0, 100%, 67%);
+$yellow: hsl(39, 100%, 56%);
+$green: hsl(166, 100%, 37%);
+$blue: hsl(234, 85%, 45%);
+body {
+    margin: 0;
+    padding: 0;
+}
+.page {
+  background: hsl(221, 100%, 96%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 320px) and (max-width: 900px) {
+    display: block;
+  }
+}
+.attribution {
+    background: hsl(221, 100%, 96%);
+    font-family: 'Hanken Grotesk';
+    text-align: center;
+    color: hsl(224, 30%, 27%);
+    a {
+      text-decoration: none;
+    }
+  }
