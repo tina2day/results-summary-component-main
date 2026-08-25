@@ -2,6 +2,9 @@
   width: 50%;
   color: hsl(224, 30%, 27%);
   font-family: "Hanken Grotesk";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 320px) and (max-width: 900px) {
   .summary {
@@ -15,26 +18,16 @@
   margin: 40px auto 25px auto;
 }
 .summary__button {
-  width: 80%;
-  height: 60px;
-  margin: 35px auto 35px;
-  border-radius: 35px;
-  background: hsl(224, 30%, 27%);
   position: relative;
-}
-.summary__button:hover {
-  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-}
-.summary__button h3 {
-  position: absolute;
-  width: 100%;
-  font-family: "Hanken Grotesk";
+  width: 80%;
+  height: auto;
+  margin: 0 auto 35px;
+  padding: 20px 0;
   font-size: 18px;
-  color: white;
+  font-family: "Hanken Grotesk";
   font-weight: 500;
-  z-index: 100;
-  text-align: center;
-}
-.summary__button button {
-  visibility: hidden;
+  border-radius: 35px;
+  border: 0;
+  background: hsl(224, 30%, 27%);
+  color: white;
 }/*# sourceMappingURL=summary.css.map */
