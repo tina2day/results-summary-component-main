@@ -4,6 +4,7 @@
 @import "../blocks/display/display";
 @import "../blocks/result/result";
 @import "../blocks/summary/summary";
+@import "../blocks/popup/popup";
 
 $red: hsl(0, 100%, 67%);
 $yellow: hsl(39, 100%, 56%);
@@ -22,6 +23,10 @@ body {
   @media (min-width: 320px) and (max-width: 900px) {
     display: block;
   }
+  
+}
+.page[hidden] {
+    display: none !important;
 }
 .attribution {
     background: hsl(221, 100%, 96%);

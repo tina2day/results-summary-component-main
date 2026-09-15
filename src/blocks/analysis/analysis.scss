@@ -9,42 +9,43 @@
         font-family: 'Hanken Grotesk';
         font-weight: 500;
         display: flex;
+        color: hsl(283, 96%, 50%);
         @media (min-width: 320px) and (max-width: 900px) {
             margin-bottom: 20px;
         }
-        img {
-            margin: 8px 15px 8px 20px;
-        }
-        h3 {
-            font-size: 18px;
-            font-weight: 500;
-        }
-        p {
-            margin: auto 20px auto auto;
-            align-items: center;
-            color:hsl(224, 30%, 27%);
-            font-family: 'Hanken Grotesk';
-            font-weight: 800;
-            span {
-                color: hsla(224, 30%, 27%, 0.623);
-            }
-        }
-        &:nth-child(1) {
+        &_reaction {
             background: hsla(0, 100%, 67%, 0.05);
             color: hsl(0, 100%, 67%);
         }
-        &:nth-child(2) {
+        &_memory {
             background: hsl(39, 100%, 56%, 0.05);
             color: hsl(39, 100%, 56%);
         }
-        &:nth-child(3) {
+        &_verbal {
             background: hsl(166, 100%, 37%, 0.05);
             color: hsl(166, 100%, 37%);
         }
-        &:nth-child(4) {
+        &_visual {
             background: hsl(234, 85%, 45%, 0.05);
             color: hsl(234, 85%, 45%);
         }
         
+    }
+    &__icon {
+        margin: 8px 15px 8px 20px;
+    }
+    &__category {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__score {
+        margin: auto 20px auto auto;
+        align-items: center;
+        color:hsl(224, 30%, 27%);
+        font-family: 'Hanken Grotesk';
+        font-weight: 800;
+        span {
+            color: hsla(224, 30%, 27%, 0.623);
+        }
     }
 }

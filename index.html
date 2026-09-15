@@ -10,12 +10,32 @@
 
 </head>
 <body>
-  <main class="page">
+  <dialog class="popup">
+    <div class="popup__content">
+      <form class="popup__form" name="popup">
+        <label class="popup__title">Add result</label>
+        <label class="popup__item" for="category">Category
+          <input type="text" class="popup__category" id="category" placeholder="Category name" title="Введите название категории" required>
+          <span id="category-error" hidden></span>
+        </label>
+        <label class="popup__item" for="score">Score
+          <input type="number" class="popup__score" id="score" placeholder="Score name" title="Введите количество баллов" required>
+          <span id="score-error" hidden></span>
+        </label>
+        <label class="popup__item" for="icon">Path
+          <input type="text" class="popup__icon" id="icon" placeholder="Icon path" title="Введите путь к иконке" required>
+          <span id="icon-error" hidden></span>
+        </label>
+        <button class="popup__button-add" type="submit" disabled>Add result</button>
+      </form>
+    </div>
+  </dialog>
+  <main class="page" hidden>
     <section class="content">
       <div class="result">
         <h1 class="result__title">Your Result</h1>
         <div class="display">
-          <h2 class="display__number">76</h2>
+          <h2 class="display__number" id="average-score">0</h2>
           <p class="display__description">of 100</p>
         </div>
         <h3 class="result__name">Great</h3>
@@ -24,27 +44,7 @@
       </div>
       <div class="summary">
         <h2 class="summary__title">Summary</h2>
-        <div class="analysis">
-          <div class="analysis__item">
-            <img alt="Реакция" src="./src/assets/images/icon-reaction.svg">
-            <h3>Reaction</h3>
-            <p>80 <span> / 100</span></p>
-          </div>
-          <div class="analysis__item">
-            <img alt="Память" src="./src/assets/images/icon-memory.svg">
-            <h3>Memory</h3>
-            <p>92 <span> / 100</span></p>
-          </div>
-          <div class="analysis__item">
-            <img alt="Вербальные навыки" src="./src/assets/images/icon-verbal.svg">
-            <h3>Verbal</h3>
-            <p>61 <span> / 100</span></p>
-          </div>
-          <div class="analysis__item">
-            <img alt="Визуализация" src="./src/assets/images/icon-visual.svg">
-            <h3>Visual</h3>
-            <p>72 <span> / 100</span></p>
-          </div>
+        <div class="analysis" id="analysis">
         </div>
         <button class="summary__button">Continue</button>
       </div>
@@ -52,7 +52,8 @@
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">tina Tutty</a>.
   </footer>
+  <script src="/src/js/main.js" type="module"></script>
 </body>
 </html>
