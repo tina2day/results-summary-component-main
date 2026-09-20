@@ -13,20 +13,27 @@
   <dialog class="popup">
     <div class="popup__content">
       <form class="popup__form" name="popup">
-        <label class="popup__title">Add result</label>
-        <label class="popup__item" for="category">Category
-          <input type="text" class="popup__category" id="category" placeholder="Category name" title="Введите название категории" required>
-          <span id="category-error" hidden></span>
-        </label>
-        <label class="popup__item" for="score">Score
-          <input type="number" class="popup__score" id="score" placeholder="Score name" title="Введите количество баллов" required>
-          <span id="score-error" hidden></span>
-        </label>
-        <label class="popup__item" for="icon">Path
-          <input type="text" class="popup__icon" id="icon" placeholder="Icon path" title="Введите путь к иконке" required>
-          <span id="icon-error" hidden></span>
-        </label>
-        <button class="popup__button-add" type="submit" disabled>Add result</button>
+        <fieldset class="popup__fieldset" hidden>
+          <h2 class="popup__title">Add result</h2>
+          <label class="popup__item" for="category">Category
+            <input type="text" class="popup__category" id="category" placeholder="Category name" title="Введите название категории" required>
+            <span id="category-error" hidden></span>
+          </label>
+          <label class="popup__item" for="score">Score
+            <input type="number" class="popup__score" id="score" placeholder="Score name" title="Введите количество баллов" required>
+            <span id="score-error" hidden></span>
+          </label>
+          <label class="popup__item" for="icon">Path
+            <input type="text" class="popup__icon" id="icon" placeholder="Icon path" title="Введите путь к иконке" required>
+            <span id="icon-error" hidden></span>
+          </label>
+          <button class="popup__button-add" type="submit" disabled>Add result</button>
+        </fieldset>
+        <fieldset class="popup__fieldset">
+            <p class="popup__error-load is-active">Loading results</p>
+            <button class="popup__button-try" type="button" hidden>Try again</button>
+            <span class="popup__error-text" hidden>Ошибка</span>
+        </fieldset>
       </form>
     </div>
   </dialog>

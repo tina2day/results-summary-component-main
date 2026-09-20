@@ -13,30 +13,36 @@ function makeClass(str) {
 }
 
 function createResultElement(result) {
-    const {category, score, icon} = result;
+    const {category, score, icon, id} = result;
 
     const analysisElement = document.createElement('div');
     const imageElement = document.createElement('img');
     const analysisCategoryElement = document.createElement('h3');
     const analysisScoreElement = document.createElement('p');
     const analysisMaxScoreElement = document.createElement('span');
+    const deleteButton = document.createElement('button');
 
     analysisElement.classList.add("analysis__item");
     analysisElement.classList.add(`analysis__item_${makeClass(category.toLowerCase())}`);
     imageElement.classList.add("analysis__icon");
     analysisCategoryElement.classList.add("analysis__category");
     analysisScoreElement.classList.add("analysis__score");
+    deleteButton.classList.add("analysis__button-delete");
 
     analysisCategoryElement.textContent = category;
     analysisScoreElement.textContent = score;
     imageElement.src = icon;
     imageElement.alt = `Иконка категории ${category}`;
     analysisMaxScoreElement.textContent = ' / 100';
+    deleteButton.textContent = '×';
+    deleteButton.dataset.id = id;
 
     analysisElement.append(imageElement);
     analysisElement.append(analysisCategoryElement);
     analysisElement.append(analysisScoreElement);
     analysisScoreElement.append(analysisMaxScoreElement);
+    analysisElement.append(deleteButton);
+
     return analysisElement;
 }
 
@@ -46,6 +52,9 @@ function renderResults(results, container) {
         const messageElement = document.createElement('p');
         messageElement.textContent = 'No results available.';
         container.append(messageElement);
+        const continueButton = document.querySelector(".summary__button");
+        continueButton.textContent = 'Continue';
+        continueButton.disabled = true;
         return;
     }
     const elements = results.map((el) => {

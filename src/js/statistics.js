@@ -1,6 +1,6 @@
 function getStatistics(results) {
     if (results.length === 0) {
-                return null;
+        return null;
     }
     const average = Math.round(results.reduce((sum, el) => {return sum + el.score;}, 0)/results.length);
     const best = results.reduce((max, el) => {return max.score > el.score?max:el});

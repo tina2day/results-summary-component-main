@@ -49,4 +49,13 @@
 }
 .analysis__score span {
   color: hsla(224, 30%, 27%, 0.623);
+}
+.analysis__button-delete {
+  padding: 10px 10px;
+  font-size: 18px;
+  font-family: "Hanken Grotesk";
+  font-weight: 500;
+  border: 0;
+  color: black;
+  align-self: center;
 }/*# sourceMappingURL=analysis.css.map */
